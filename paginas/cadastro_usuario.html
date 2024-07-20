@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/trabalhoFinal/style.css">
+</head>
+<body>
+    <div id="cabecalho">
+        <h1>Controle de atividades</h1>
+        <h2>Cadastro de usuarios</h2>
+    </div>
+    <form method="post">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome"><br>
+
+        <label for="matricula">Matricula: </label>
+        <input type="text" name="matricula" id="matricula"><br>
+
+        <label for="tipo">Tipo: </label>
+        <select name="tipo" id="tipo">
+            <option>Selecione</option>
+            <option value="Professor">Professor</option>
+            <option value="Aluno">Aluno</option>
+        </select><br>
+        
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha"><br>
+        <label for="confirma senha">Confime a senha: </label>
+        <input type="password" name="confirma senha" id="senha2"><br>  
+
+        <label for="curso">Curso: </label>
+        <input type="text" name="curso" id="curso"><br>
+
+        <button onclick="cadastraUsuario()">Enviar</button>
+    </form>
+    <a href="/trabalhoFinal/"><button>Voltar</button></a>
+
+    <script src="/trabalhoFinal/scripts/usuarios.js"></script>
+</body>
+</html>

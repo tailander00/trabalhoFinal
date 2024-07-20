@@ -1,0 +1,73 @@
+body {
+    background-color: #66b3ff;
+    font-family: Arial, sans-serif;
+
+    display: flex; /* Usar flexbox para alinhar horizontalmente e verticalmente */
+    justify-content: center; /* Alinhar horizontalmente (no eixo X) */
+    align-items: center; /* Alinhar verticalmente (no eixo Y) */
+    min-height: 100vh;
+    }
+
+form {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px 5px #888888;
+    border: 2px solid aqua;
+    border-radius: 5px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    max-width: 300px; /* Defina um valor máximo de largura */
+  }
+
+  /* Estilo para o botão */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00a0e9;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0077b3;
+  }
+  
+  button:active {
+    background-color: #005999;
+  }
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+
+.post-it {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffcc00;
+    border: 2px solid #ff9900;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #888888;
+    font-family: Arial, sans-serif;
+}
+#cabecalho{
+    align-items: top;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/trabalhoFinal/style.css">
+    <title>Professor</title>
+</head>
+<body>
+    <div id="cabecalho">
+        <a href="/trabalhoFinal/"><button>Sair</button></a>
+        <h1>Controle de atividades</h1>
+    </div>
+    <div id="cadastro de diciplina">
+        <h3>Cadatro de diciplina</h3>
+        <form method="post">
+            <label for="codigo">Codigo</label>
+            <input type="text" name="codigo" id="codigo"><br>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome"><br>
+            <label for="curso">Curso</label>
+            <input type="text" name="curso" id="curso"><br>
+            <button onclick="cadastraDiciplina()">Cadastrar</button>
+        </form>
+        
+    </div>
+    <div id="cadastro de atividades">
+        <h3>Cadastro de atividade</h3>
+        <form method="post">
+            <label for="diciplina">Diciplina</label>
+            <select name="diciplina" id="diciplina">
+                <option value="">Selecione</option>
+            </select>
+            <label for="tipo">Tipo</label>
+            <input type="text" name="tipo" id="tipo"><br>
+            <label for="descricao">Descricao</label>
+            <input type="text" name="descricao" id="descricao"><br>
+            <label for="peso">Peso</label>
+            <input type="text" name="peso" id="peso"><br>
+            <label for="data_entrega">Data de entrega</label>
+            <input type="date" name="data_entrega" id="data_entrega"><br>
+            <button onclick="cadastraAtividade()">Cadastrar</button>
+        </form>
+        
+    </div>
+    <div id="lista de atividades">
+        <h3>Lista de atividades</h3>
+        <label for="diciplina">Diciplina</label>
+        <select name="diciplina2" id="diciplina2" onchange="listaAtividades()">
+            <option value="">Selecione</option>
+        </select>
+        <div id="atividades"></div>
+    </div>
+
+    <script src="/trabalhoFinal/scripts/professores.js"></script>
+    <script src="/trabalhoFinal/scripts/diciplinas.js"></script>
+    <script src="/trabalhoFinal/scripts/atividades.js"></script>
+</body>
+</html>
